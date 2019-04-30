@@ -6,6 +6,141 @@
     @ViewData["Message"]
 </h2> 
 
+<br />
+<br />
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="poNumber" class="col-sm-2 control-label">Customer PO Number:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="poNumber" placeholder="PO Number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="orderDate" class="col-sm-2 control-label">Order Date</label>
+        <div class="col-sm-10">
+            <input type="date" class="form-control" id="orderDate" placeholder="">
+        </div>
+    </div>
+</form>
+<hr />
+<br />
+<br />
+<div class="row">
+    <div class="col-sm-6">
+        <h4>Bill To:</h4>
+        <div class="well">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="poNumber" class="col-sm-4 control-label">Customer Name:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="poNumber" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="col-sm-4 control-label">Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="address" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact" class="col-sm-4 control-label">Contact</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="contact" placeholder="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <h4>Shipped To:</h4>
+        <div class="well">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Use Billing Address As Shipping
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="poNumber" class="col-sm-4 control-label">Customer Name:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="poNumber" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="col-sm-4 control-label">Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="address" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact" class="col-sm-4 control-label">Contact</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="contact" placeholder="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4>Sales</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Shipping Method</th>
+                    <th>Shipping Terms</th>
+                    <th>Delivery Date</th>
+                    <th>Payment Terms</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>5/30/2019</td>
+                    <td>N/30</td>
+                    <td>6/30/2019</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+        <h4>Sales Order Summary</h4>
+        <table class="table">
+            <thead>
+            </thead>
+            <tbody class="align-right">
+                <tr>
+                    <td>Sub Total:</td>
+                    <td>$9.80</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping/Handling:</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>$12.80</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 
