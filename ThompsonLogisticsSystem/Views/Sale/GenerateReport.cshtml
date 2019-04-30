@@ -4,9 +4,128 @@
 <br />
 <h2>
     @ViewData["Message"]
-</h2> 
+</h2>
 
 
+<hr />
+<br />
+<form class="form-inline">
+    <div class="form-group">
+        <label for="name">Start Date</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" value="4/1/2019">
+    </div>
 
+    <div class="form-group">
+        <label for="name">End Date Date</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" value="4/30/2019">
+    </div>
+</form>
 
+<br />
+<br />
+<br />
+
+<div class="col-sm-4">
+    <h4>Per Product Report</h4>
+    <hr />
+    <div class="form-group">
+        <select class="form-control">
+            <option>Daily Sales Report By Product</option>
+            <option>Weekly Sales Report By Product</option>
+            <option>Monthly Sales Report By Product</option>
+            <option>Quarterly Sales Report By Product</option>
+            <option>Yearly Sales Report By Product</option>
+        </select>
+    </div>
+    <br />
+    <div class="form-group">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Save to PDF
+            </label>&nbsp;&nbsp;&nbsp;
+            <label>
+                <input type="checkbox" value="">
+                Print hardcopy
+            </label>
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-info">Generate Report</button>
+</div>
+<div class="col-sm-4">
+    <h4>Per Customer Report</h4>
+    <hr />
+    <select class="form-control">
+        <option>Daily Sales Report By Customer</option>
+        <option>Weekly Sales Report By Customer</option>
+        <option>Monthly Sales Report By Customer</option>
+        <option>Quarterly Sales Report By Customer</option>
+        <option>Yearly Sales Report By Customer</option>
+    </select>
+    <br />
+    <div class="form-group">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Save to PDF
+            </label>&nbsp;&nbsp;&nbsp;
+            <label>
+                <input type="checkbox" value="">
+                Print hardcopy
+            </label>
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-info">Generate Report</button>
+</div>
+<div class="col-sm-4">
+    <h4>Group Report</h4>
+    <hr />
+    <div class="form-group">
+        <label for="product">Report By Product</label>
+        <select multiple class="form-control">
+            <option>Daily Sales Report By Product</option>
+            <option>Weekly Sales Report By Product</option>
+            <option>Monthly Sales Report By Product</option>
+            <option>Quarterly Sales Report By Product</option>
+            <option>Yearly Sales Report By Product</option>
+        </select>
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="product">Report By Customer</label>
+        <select multiple class="form-control">
+            <option>Daily Sales Report By Customer</option>
+            <option>Weekly Sales Report By Customer</option>
+            <option>Monthly Sales Report By Customer</option>
+            <option>Quarterly Sales Report By Customer</option>
+            <option>Yearly Sales Report By Customer</option>
+        </select>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Save to PDF
+            </label>&nbsp;&nbsp;&nbsp;
+            <label>
+                <input type="checkbox" value="">
+                Print hardcopy
+            </label>
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-info">Generate Report</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
 
