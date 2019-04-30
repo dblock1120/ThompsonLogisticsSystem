@@ -46,18 +46,24 @@
                             <li><a href="@Url.Action("UpdateVendor", "Purchasing")">Update Vendor Info</a></li>
                             <li role="separator" class="divider"></li>
                             <li role="presentation" class="dropdown-header">REPORTS</li>
-                            <li role="separator" class="divider"></li>
                             <li><a href="@Url.Action("GenerateReport", "Purchasing")">Generate PO Reports</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sales <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">View Sales Orders</a></li>
-                            <li><a href="#">Manage Sales Orders</a></li>
-                            <li><a href="#">Manage Customers</a></li>
+                            <li><a href="@Url.Action("Sales", "Home")">Sales Hub</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Generate Sales Reports</a></li>
+                            <li role="presentation" class="dropdown-header">MANAGE ORDERS</li>
+                            <li><a href="@Url.Action("CreateSalesOrder", "Sale")">Create Sales Order</a></li>
+                            <li><a href="@Url.Action("UpdateSalesOrder", "Sale")">Update Sales Order</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">MANAGE CUSTOMER</li>
+                            <li><a href="@Url.Action("AddNewCustomer", "Sale")">Add New Customer</a></li>
+                            <li><a href="@Url.Action("UpdateCustomer", "Sale")">Update Customer Info</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">REPORTS</li>
+                            <li><a href="@Url.Action("GenerateReport", "Sale")">Generate Sales Reports</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">

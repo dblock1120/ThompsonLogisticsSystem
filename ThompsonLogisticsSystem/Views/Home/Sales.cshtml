@@ -9,28 +9,70 @@
 <h4>What would you like to do?</h4>
 <div class="row">
     <div class="col-md-3">
-        <a href="#" class="thumbnail text-center">
-            <h2><i class="fas fa-search-dollar fa-4x"></i></h2>
-        </a>
-        <h4>View My Sales Orders</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="text-center">My Sales Orders</h4>
+            </div>
+            <h2 class="text-center"><i class="fas fa-search-dollar fa-4x text-info text-center"></i></h2>
+            <hr />
+            <div class="panel-body">
+                <a href="@Url.Action("ViewSalesOrders", "Sale")" class="btn btn-primary btn-block">
+                    View My Sales Orders
+                </a>
+                <br />
+                <br />
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <a href="#" class="thumbnail text-center">
-            <h2><i class="fas fa-cart-plus fa-4x"></i></h2>
-        </a>
-        <h4>Create New Sales Order</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="text-center">Manage Sales Orders</h4>
+            </div>
+            <h2 class="text-center"><i class="fas fa-cart-plus fa-4x text-info text-center"></i></h2>
+            <hr />
+            <div class="panel-body">
+                <a href="@Url.Action("CreateSalesOrder", "Sale")" class="btn btn-primary btn-block">
+                    Create Sales Orders
+                </a>
+                <a href="@Url.Action("UpdateSalesOrder", "Sale")" class="btn btn-primary btn-block">
+                    Update Sales Order
+                </a>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <a href="#" class="thumbnail text-center">
-            <h2><i class="fas fa-tasks fa-4x"></i></h2>
-        </a>
-        <h4>Check Inventory</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="text-center">Manage Customers</h4>
+            </div>
+            <h2 class="text-center"><i class="fas fa-tasks fa-4x text-info text-center"></i></h2>
+            <hr />
+            <div class="panel-body">
+                <a href="@Url.Action("AddNewCustomer", "Sale")" class="btn btn-primary btn-block">
+                    Add New Customer
+                </a>
+                <a href="@Url.Action("UpdateCustomer", "Sale")" class="btn btn-primary btn-block">
+                    Update Customer
+                </a>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <a href="#" class="thumbnail text-center">
-            <h2><i class="fas fa-print fa-4x"></i></h2>
-        </a>
-        <h4>Generate Sales Reports</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="text-center">Reports</h4>
+            </div>
+            <h2 class="text-center"><i class="fas fa-print fa-4x text-info text-center"></i></h2>
+            <hr />
+            <div class="panel-body">
+                <a href="@Url.Action("GenerateReport", "Sale")" class="btn btn-primary btn-block">
+                    Generate PO Reports
+                </a>
+                <br />
+                <br />
+            </div>
+        </div>
     </div>
 </div>
 <br />
