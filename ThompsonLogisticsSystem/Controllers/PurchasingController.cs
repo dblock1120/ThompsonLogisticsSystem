@@ -24,7 +24,36 @@ namespace ThompsonLogisticsSystem.Controllers
 
             return View();
         }
-               
+
+        public IActionResult ViewPurchaseOrders()
+        {
+            ViewData["Message"] = "My Purchase Orders.";
+            return View();
+        }
+
+        public IActionResult UpdatePurchaseOrder()
+        {
+            ViewData["Message"] = "Update Purchase Order.";
+            return View();
+        }
+
+        public IActionResult AddNewVendor()
+        {
+            ViewData["Message"] = "Add New Vendor.";
+            return View();
+        }
+
+        public IActionResult UpdateVendor()
+        {
+            ViewData["Message"] = "Update Vendor Info.";
+            return View();
+        }
+
+        public IActionResult GenerateReport()
+        {
+            ViewData["Message"] = "PO Report.";
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

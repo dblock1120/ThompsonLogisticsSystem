@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Create Purchase Order";
+}
+
+<br />
+<br />
+<h2>@ViewData["Message"]</h2>
+<form action="/Purchasing/CreatePurchaseOrder" class="form-horizontal" method="post" role="form">
+    <input name="__RequestVerificationToken" type="hidden" value="qukVyGSVWeaehpUdzEIOmdik34h1rluhRv7nrvMdh2uAoReA4WbYtbL0QsfqGzXOPRCSK9WQFiVBtNfT_6pykGTYFzvvapblCOcJ5o9XwEo1" />
+
+    <hr />
+    <br />
+    <br />
+    <div class="validation-summary-valid text-danger" data-valmsg-summary="true">
+        <ul>
+            <li style="display:none"></li>
+        </ul>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <label class="col-md-2 control-label">Vendor:</label>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option value="">-- Select Vendor --</option>
+                    <option value="Ralston Purina">Ralston Purina</option>
+                    <option value="Iams">Iams</option>
+                    <option value="Fido's Pet Supplies">Fido's Pet Supplies</option>
+                    <option value="Acme Fish Supplies">Acme Fish Supplies</option>
+                </select>
+
+            </div>
+            <label class="col-md-2 control-label">PO Number:</label><div class="col-md-4">PO19210-01</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <label class="col-md-2 control-label">Ship To Location:</label>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option value="">-- Select Shipment Location --</option>
+                    <option value="Maumee Warehouse">Maumee Warehouse</option>
+                    <option value="Warehouse 2">Warehouse 2</option>
+                    <option value="Warehouse 3">Warehouse 3</option>
+                </select>
+
+            </div>
+            <label class="col-md-2 control-label">Buyer:</label>
+            <div class="col-md-2">
+                Anna Yost
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-4">123 Anywhere Street Maumee, OH 43210</div>
+            <label class="col-md-2 control-label">Shipping Terms:</label>
+            <div class="col-md-2">
+                <select class="form-control">
+                    <option value="">-- Select Terms --</option>
+                    <option value="Maumee Warehouse">COD</option>
+                    <option value="Warehouse 2">FCL</option>
+                    <option value="Warehouse 3">FOB</option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr />
+    <br />
+    <br />
+    <h4>Please select items:</h4>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2"><b>Item</b></div>
+            <div class="col-md-2 form-group"><b>&nbsp;&nbsp;&nbsp;Quantity</b></div>
+            <div class="col-md-2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Price</b></div>
+            <div class="col-md-2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Required Date</b></div>
+            <div class="col-md-2"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2">
+                <select class="form-control">
+                    <option value="">-- Select Item --</option>
+                    <option value="Maumee Warehouse">Dog Food</option>
+                    <option value="Warehouse 2">Cat Food</option>
+                    <option value="Warehouse 3">Fish Food</option>
+                    <option value="Warehouse 2">Bird Food</option>
+                    <option value="Warehouse 3">Chew Toy</option>
+                </select>
+            </div>
+            <div class="col-md-2"><input type="text" class="form-control" placeholder=""></div>
+            <div class="col-md-2"><input type="text" class="form-control" placeholder=""></div>
+            <div class="col-md-2"><input type="text" class="form-control" placeholder=""></div>
+            <div class="col-md-2"><input type="button" value="Add" /></div>
+
+        </div>
+
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="form-group">
+        <div class="col-md-offset-8 col-md-8">
+            <input type="submit" class="btn btn-default btn-lg btn-info" value="Update Purchase Order" />
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
