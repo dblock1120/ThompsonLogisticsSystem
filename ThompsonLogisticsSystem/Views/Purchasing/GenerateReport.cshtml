@@ -4,9 +4,132 @@
 <br />
 <h2>
     @ViewData["Message"]
-</h2> 
+</h2>
+
+<hr />
+<br />
+<form class="form-inline">
+    <div class="form-group">
+        <label for="name">Start Date</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" value="4/1/2019">
+    </div>
+
+    <div class="form-group">
+        <label for="name">End Date Date</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" value="4/30/2019">
+    </div>
+</form>
+
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-sm-4">
+        <h4>Purchases By Vendor</h4>
+        <hr />
+        <div class="form-group">
+            <select class="form-control">
+                <option>Lion King Co.</option>
+                <option>Giraffe Cant Dance Ltd</option>
+                <option>Monkey Business LLC</option>
+                <option>Roasted Pig Co</option>
+                <option>101 Dalmatians Store</option>
+            </select>
+
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Save to PDF
+                </label>&nbsp;&nbsp;&nbsp;
+                <label>
+                    <input type="checkbox" value="">
+                    Print hardcopy
+                </label>
+            </div>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-info">Generate Report</button>
+    </div>
+    <div class="col-sm-4">
+        <h4>Per Product Report</h4>
+        <hr />
+        <div class="form-group">
+            <select class="form-control">
+                <option>Carrot Mint Chocolate</option>
+                <option>Honey Pie</option>
+                <option>Itchy Worms</option>
+                <option>Spicy Snail</option>
+                <option>Cajun Fish Snack</option>
+            </select>
+
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Save to PDF
+                </label>&nbsp;&nbsp;&nbsp;
+                <label>
+                    <input type="checkbox" value="">
+                    Print hardcopy
+                </label>
+            </div>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-info">Generate Report</button>
+    </div>
+    <div class="col-sm-4">
+        <h4>Group Report</h4>
+        <hr />
+        <div class="form-group">
+            <label for="product">Report By Product</label>
+            <select multiple class="form-control">
+                <option>Monthly Sales Report By Vendor</option>
+                <option>Quarterly Sales Report By Vendor</option>
+                <option>Yearly Sales Report By Vendor</option>
+            </select>
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="product">Report By Customer</label>
+            <select multiple class="form-control">
+                <option>Monthly Sales Report By Product</option>
+                <option>Quarterly Sales Report By Product</option>
+                <option>Yearly Sales Report By Product</option>
+            </select>
+        </div>
+
+        <br />
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Save to PDF
+                </label>&nbsp;&nbsp;&nbsp;
+                <label>
+                    <input type="checkbox" value="">
+                    Print hardcopy
+                </label>
+            </div>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-info">Generate Report</button>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
 
 
+</div>
 
 
 
